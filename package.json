@@ -11,7 +11,7 @@
     "link": "npm link"
   },
   "author": "Felipe Moura <felipewom@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "commander": "^12.0.0",
     "ejs": "^3.1.9",
