@@ -1,0 +1,23 @@
+{
+  "name": "nbesk",
+  "version": "1.0.0",
+  "description": "NodeJS Backend Starter Kit",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "nbesk": "./index.js"
+  },
+  "scripts": {
+    "link": "npm link"
+  },
+  "author": "Felipe Moura <felipewom@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^12.0.0",
+    "ejs": "^3.1.9",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^9.2.15",
+    "kleur": "^4.1.5",
+    "ora": "^8.0.1"
+  }
+}
