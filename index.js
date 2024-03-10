@@ -25,7 +25,6 @@ program
 program
   .command("create <project-name>")
   .alias("c")
-  .argument("<project-name>", "Name of the project")
   .description("Create a new project")
   .action((projectName) => {
     console.log(
