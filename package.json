@@ -13,10 +13,10 @@
   "author": "Felipe Moura <felipewom@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "commander": "^12.0.0",
-    "ejs": "^3.1.9",
+    "commander": "^12.1.0",
+    "ejs": "^3.1.10",
     "fs-extra": "^11.2.0",
-    "inquirer": "^9.2.15",
+    "inquirer": "^9.3.8",
     "kleur": "^4.1.5",
     "ora": "^8.0.1"
   }
