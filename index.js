@@ -1,16 +1,17 @@
 #!/usr/bin/env node
-import { program } from "commander";
-import fs from "fs-extra";
-import path from "path";
-import { execSync } from "child_process";
-import kleur from "kleur";
-
-const [majorVersion] = process.version.replace("v", "").split(".");
-if (Number(majorVersion) < 18) {
-  console.log(kleur.red("You are using a version of Node.js that is below 18"));
-  console.log(kleur.gray("Please install Node.js 18 or later"));
+// Check the runtime before evaluating dependencies with newer Node requirements.
+const [majorVersion, minorVersion] = process.versions.node.split(".").map(Number);
+if (majorVersion < 22 || (majorVersion === 22 && minorVersion < 13) ||
+    (majorVersion === 23 && minorVersion < 5)) {
+  console.error("Please install Node.js 22.13+ (or 23.5+ on the Node.js 23 line)");
   process.exit(1);
 }
+
+const { program } = await import("commander");
+const { default: fs } = await import("fs-extra");
+const { default: path } = await import("node:path");
+const { execSync } = await import("node:child_process");
+const { default: kleur } = await import("kleur");
 
 const templateDir = path.resolve(
   path.dirname(import.meta.url).replace("file://", ""),
