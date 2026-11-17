@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-- Node.js version 18 or above
+- Node.js 22.13+ on Node 22, or 23.5+ on later release lines (maintained LTS recommended)
 - npm version 6 or above
 
 ## Installation
